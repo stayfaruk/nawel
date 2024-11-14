@@ -1,0 +1,67 @@
+/* Style commun */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Empêche le défilement */
+}
+
+/* Page 1 styles */
+.page1 {
+    background: url('f.jpg') no-repeat center center fixed; /* Utilisation de l'image de fond */
+    background-size: cover; /* S'assurer que l'image couvre toute la page */
+    color: white; /* Texte en blanc pour contraster avec l'image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer le contenu verticalement */
+    align-items: center; /* Centrer le contenu horizontalement */
+    height: 100%; /* Occuper toute la hauteur de l'écran */
+}
+
+/* Titres */
+.content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 300px; /* Déplacer le texte un peu plus haut */
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+/* Texte de crédit */
+.credit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-style: inherit;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Bouton */
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f8c8dc, #ffb6c1); /* Dégradé rose clair vers rose pâle */
+    color: #000; /* Texte noir pour un contraste élevé */
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1) translateX(-50%);
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4); /* Un rose plus prononcé au survol */
+}

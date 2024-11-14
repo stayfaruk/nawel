@@ -1,0 +1,88 @@
+/* Page 2 styles */
+.page2 {
+    background: linear-gradient(135deg, #001f3f, #f8d7da);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    justify-items: center;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.4em;
+    filter: brightness(1.2); /* Augmente la luminosité de l'image */
+    
+}
+
+.card p {
+    background-color: rgba(0, 0, 0, 0.3); /* Opacité réduite pour rendre l'arrière-plan plus clair */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Agrandissement au survol */
+.card:hover {
+    transform: scale(1.1); /* Augmente la taille de la carte de 10% */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Images de fond spécifiques */
+.card1 { background-image: url('Disney.jpg'); }
+.card2 { background-image: url('2.jpg'); }
+.card3 { background-image: url('3.jpg'); }
+.card4 { background-image: url('4.jpg'); }
+.card5 { background-image: url('5.jpg'); }
+.card6 { background-image: url('6.jpg'); }
+
+/* Bouton "Back" au centre-gauche */
+.back-button {
+    position: absolute;
+    top: 50%; /* Centré verticalement */
+    left: 20px; /* À 20px du bord gauche */
+    transform: translateY(-50%); /* Centré exactement au milieu */
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background: linear-gradient(135deg, #001f3f, #f8c8dc);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.2s;
+    
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #003b5c, #f4a7b9);
+}
